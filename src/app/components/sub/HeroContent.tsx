@@ -2,13 +2,9 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  slideInFromLeft,
-  slideInFromRight,
-  slideInFromTop,
-} from "../../../../utils/motion";
-import { SparklesIcon } from "@heroicons/react/24/solid";
+import { slideInFromLeft, slideInFromRight } from "../../../../utils/motion";
 import Image from "next/image";
+import TextSections from "./TextSections";
 
 const HeroContent = () => {
   return (
@@ -18,16 +14,10 @@ const HeroContent = () => {
       className="z-[20] mt-40 flex w-full flex-row items-center justify-center px-20"
     >
       <div className="m-auto flex h-full w-full flex-col justify-center gap-5 text-start">
-        <motion.div
-          variants={slideInFromTop}
-          className="Welcome-box border border-[#7042f88b] px-[7px] py-[8px] opacity-[0.9]"
-        >
-          <SparklesIcon className="mr-[10px] h-5 w-5 text-[#b49bff]" />
-          <h1 className="Welcome-text text-[13px]">
-            Front-end Developer Portfolio
-          </h1>
-        </motion.div>
-
+        <TextSections
+          variant="slideInFromTop"
+          text="Front-end Developer Portfolio"
+        />
         <motion.div
           variants={slideInFromLeft(0.5)}
           className="w-uto mt-6 flex h-auto max-w-[600px] flex-col gap-6 text-6xl font-bold text-white"

@@ -18,7 +18,7 @@ const Navbar = () => {
             className="hover:animate-slowspin cursor-pointer"
           />
           <span className="ml-[10px] hidden font-bold text-gray-300 md:block">
-            WebChain Dev
+            Jhony Dev
           </span>
         </a>
         <div className="flex h-full w-[500px] flex-row items-center justify-between md:mr-20">
