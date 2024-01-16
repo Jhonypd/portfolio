@@ -1,6 +1,6 @@
 import React from "react";
 import SkillsDataProvider from "../sub/SkillsDataProvider";
-import { Frontend_skill } from "../constants";
+import { Frontend_skill } from "../../../../constants";
 
 const Skills = () => {
   return (
