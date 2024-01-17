@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "JhonyDev",
-  description: "Desenvolvedor Front-end",
+  description: "Desenvolvedor Front-end Brusque-SC",
 };
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body
         className={`${inter.className} overflow-x-hidden overflow-y-scroll bg-[#030014]`}
       >

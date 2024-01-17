@@ -3,8 +3,7 @@ import HeroContent from "../sub/HeroContent";
 
 function Hero() {
   return (
-    <div className="relative flex h-full w-full flex-col">
-      
+    <div className="relative flex h-full w-full flex-col" id="#">
       <HeroContent />
     </div>
   );

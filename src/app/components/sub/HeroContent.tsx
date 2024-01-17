@@ -11,38 +11,32 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="z-[20] mt-40 flex w-full flex-row items-center justify-center px-20"
+      className="z-[20] mt-32 flex w-full flex-row items-center justify-center px-20"
     >
-      <div className="m-auto flex h-full w-full flex-col justify-center gap-5 text-start">
+      <div className="m-auto mt-4 flex h-full w-full flex-col justify-center gap-5 text-start">
         <TextSections
           variant="slideInFromTop"
           text="Front-end Developer Portfolio"
         />
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="w-uto mt-6 flex h-auto max-w-[600px] flex-col gap-6 text-6xl font-bold text-white"
+          className="w-uto mt-2 flex h-auto max-w-[600px] flex-col gap-6 text-6xl font-bold text-white"
         >
           <span>
-            Providing{" "}
+            Jhony Pereira{" "}
             <span className="bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent">
-              the best
+              Desenvolvedor Web
             </span>{" "}
-            project experience
+            Front-end
           </span>
         </motion.div>
-        <motion.p
-          variants={slideInFromLeft(0.8)}
-          className="my-5 max-w-[600px] text-lg text-gray-400"
-        >
-          &apos;m a Full Stack Software Engineer with experience in website,
-          mobile and software development. Check out my projects and
-          skills.&apos;
-        </motion.p>
+
         <motion.a
           variants={slideInFromLeft(1)}
-          className="button-primary max-w-[200px] cursor-pointer rounded-lg py-2 text-center text-white"
+          className="button-primary mt-4 max-w-[200px] cursor-pointer rounded-lg py-2 text-center text-white"
+          href="#projects"
         >
-          Learn More!
+          Ver Mais
         </motion.a>
       </div>
       <motion.div

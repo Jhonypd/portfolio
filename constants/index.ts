@@ -1,3 +1,5 @@
+import { BsTelegram, BsInstagram } from "react-icons/bs";
+
 export const Skill_data = [
   {
     skill_name: "Html 5",
@@ -26,12 +28,6 @@ export const Skill_data = [
   {
     skill_name: "React",
     Image: "/react.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Redux",
-    Image: "/redux.png",
     width: 80,
     height: 80,
   },
@@ -74,21 +70,6 @@ export const Skill_data = [
   },
 ];
 
-export const Socials = [
-  {
-    name: "Discord",
-    src: "/instagram.svg",
-  },
-  {
-    name: "Facebook",
-    src: "/facebook.svg",
-  },
-  {
-    name: "Instagram",
-    src: "/discord.svg",
-  },
-];
-
 export const Frontend_skill = [
   {
     skill_name: "Html 5",
@@ -126,12 +107,7 @@ export const Frontend_skill = [
     width: 80,
     height: 80,
   },
-  {
-    skill_name: "Redux",
-    Image: "/redux.png",
-    width: 80,
-    height: 80,
-  },
+
   {
     skill_name: "React Query",
     Image: "/reactquery.png",
