@@ -1,174 +1,70 @@
-import { BsTelegram, BsInstagram } from "react-icons/bs";
+import CssIcon from "@/app/components/sub/icons/CssIcon";
+import ExpressIcon from "@/app/components/sub/icons/ExpressIcon";
+import GithubBigIcon from "@/app/components/sub/icons/GithubBigIcon";
+import GitIcon from "@/app/components/sub/icons/GitIcon";
+import HtmlIcon from "@/app/components/sub/icons/HtmlIcon";
+import JavaScriptIcon from "@/app/components/sub/icons/JavascriptIcon";
+import NextIcon from "@/app/components/sub/icons/NextIcon";
+import NodejsIcon from "@/app/components/sub/icons/NodejsIcon";
+import ReactIcon from "@/app/components/sub/icons/ReactIcon";
+import SassIcon from "@/app/components/sub/icons/SassIcon";
+import TailwindIcon from "@/app/components/sub/icons/TailwindIcon";
+import TypescriptIcon from "@/app/components/sub/icons/TypescriptIcon";
+import WebpackIcon from "@/app/components/sub/icons/WebpackIcon";
+import MongodbIcon from "@/app/components/sub/icons/MongodbIcon";
 
-export const Skill_data = [
-  {
-    skill_name: "Html 5",
-    Image: "/html.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Css",
-    Image: "/css.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Java Script",
-    Image: "/js.png",
-    width: 65,
-    height: 65,
-  },
-  {
-    skill_name: "Tailwind Css",
-    Image: "/tailwind.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "React",
-    Image: "/react.png",
-    width: 80,
-    height: 80,
-  },
-
-  {
-    skill_name: "Type Script",
-    Image: "/ts.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Next js 13",
-    Image: "/next.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Framer Motion",
-    Image: "/framer.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Stripe Payment",
-    Image: "/stripe.webp",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Node js",
-    Image: "/node-js.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Mongo db",
-    Image: "/mongodb.png",
-    width: 40,
-    height: 40,
-  },
+export const HtmlIcons = [
+  HtmlIcon,
+  ReactIcon,
+  SassIcon,
+  CssIcon,
+  JavaScriptIcon,
+  ExpressIcon,
+  MongodbIcon,
+  TailwindIcon,
+  NextIcon,
+  NodejsIcon,
+  WebpackIcon,
+  GitIcon,
+  TypescriptIcon,
+  GithubBigIcon,
 ];
 
-export const Frontend_skill = [
+export const projectsData = [
   {
-    skill_name: "Html 5",
-    Image: "/html.png",
-    width: 80,
-    height: 80,
+    id: 1,
+    title: "JP Store",
+    description: "Project",
+    image: "./jpstore.png",
+    tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "/",
   },
   {
-    skill_name: "Css",
-    Image: "/css.png",
-    width: 80,
-    height: 80,
+    id: 2,
+    title: "CodeSnap",
+    description: "Project",
+    image: "./codesnapio.png",
+    tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "/",
   },
   {
-    skill_name: "Java Script",
-    Image: "/js.png",
-    width: 65,
-    height: 65,
+    id: 3,
+    title: "SecretWord",
+    description: "Project",
+    image: "./secretword.png",
+    tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "/",
   },
   {
-    skill_name: "Tailwind Css",
-    Image: "/tailwind.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Material UI",
-    Image: "/mui.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "React",
-    Image: "/react.png",
-    width: 80,
-    height: 80,
-  },
-
-  {
-    skill_name: "React Query",
-    Image: "/reactquery.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Type Script",
-    Image: "/ts.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Next js 13",
-    Image: "/next.png",
-    width: 80,
-    height: 80,
-  },
-];
-
-export const Backend_skill = [
-  {
-    skill_name: "Node js",
-    Image: "/node-js.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Express js",
-    Image: "/express.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Mongo db",
-    Image: "/mongodb.png",
-    width: 40,
-    height: 40,
-  },
-  {
-    skill_name: "Fire base",
-    Image: "/Firebase.png",
-    width: 55,
-    height: 55,
-  },
-  {
-    skill_name: "Postger SQL",
-    Image: "/postger.png",
-    width: 70,
-    height: 70,
-  },
-  {
-    skill_name: "My SQL",
-    Image: "/mysql.png",
-    width: 70,
-    height: 70,
-  },
-  {
-    skill_name: "Prisma",
-    Image: "/prisma.webp",
-    width: 70,
-    height: 70,
+    id: 4,
+    title: "Mini Blog",
+    description: "Project",
+    image: "./jhonydev.png",
+    tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "/",
   },
 ];

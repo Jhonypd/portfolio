@@ -11,7 +11,7 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="z-[20] mt-32 flex w-full flex-row items-center justify-center px-20"
+      className="z-[20] mt-32 flex w-full flex-col items-center justify-center px-10 md:flex-row md:px-20"
     >
       <div className="m-auto mt-4 flex h-full w-full flex-col justify-center gap-5 text-start">
         <TextSections
@@ -20,7 +20,7 @@ const HeroContent = () => {
         />
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="w-uto mt-2 flex h-auto max-w-[600px] flex-col gap-6 text-6xl font-bold text-white"
+          className="w-uto mt-2 flex h-auto max-w-[600px] flex-col gap-6 text-4xl font-bold text-white md:text-6xl"
         >
           <span>
             Jhony Pereira{" "}
@@ -33,7 +33,7 @@ const HeroContent = () => {
 
         <motion.a
           variants={slideInFromLeft(1)}
-          className="button-primary mt-4 max-w-[200px] cursor-pointer rounded-lg py-2 text-center text-white"
+          className="button-primary mx-auto mt-4 min-w-[100px] cursor-pointer rounded-lg py-2 text-center text-white md:max-w-[200px]"
           href="#projects"
         >
           Ver Mais

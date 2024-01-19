@@ -10,7 +10,7 @@ const Navbar = () => {
   const navLinks = [
     {
       title: "Inicio",
-      path: "#",
+      path: "#inicio",
     },
     {
       title: "Sobre mim",
@@ -33,7 +33,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 z-50 w-full bg-[#03001417] px-10 py-4 shadow-lg shadow-[#2a0e61]/50 backdrop-blur-md md:py-1">
+    <nav className="fixed top-0 z-50 w-full bg-[#03001417] px-10 py-1 shadow-lg shadow-[#2a0e61]/50 backdrop-blur-md md:py-4">
       <div className="mx-auto my-auto flex flex-wrap items-center justify-between px-4 py-3">
         <Link
           href={"/"}

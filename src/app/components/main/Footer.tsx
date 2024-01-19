@@ -1,11 +1,6 @@
 import React from "react";
 
-import {
-  RxDiscordLogo,
-  RxGithubLogo,
-  RxInstagramLogo,
-  RxLinkedinLogo,
-} from "react-icons/rx";
+import { RxGithubLogo, RxInstagramLogo, RxLinkedinLogo } from "react-icons/rx";
 import { BsEnvelopeAtFill } from "react-icons/bs";
 import { FaCode } from "react-icons/fa6";
 
@@ -39,7 +34,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex h-auto min-w-[200px] flex-col items-end justify-start">
+          <div className="flex h-auto min-w-[200px] flex-col items-center justify-start md:items-end">
             <a
               href="mailto:jhony-16@live.com?subject=&body="
               target="_blanck"

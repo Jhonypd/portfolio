@@ -1,17 +1,16 @@
 "use client";
-import React from "react";
+import React, { JSX, ReactNode } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Image from "next/image";
 
 interface Props {
-  src: string;
-  width: number;
-  height: number;
+  // width: number;
+  // height: number;
+  icon: React.ReactNode;
   index: number;
 }
 
-const SkillsDataProvider = ({ src, width, height, index }: Props) => {
+const SkillsDataProvider = ({ icon, index }: Props) => {
   const { ref, inView } = useInView({ triggerOnce: true });
 
   const imageVariants = {
@@ -20,6 +19,7 @@ const SkillsDataProvider = ({ src, width, height, index }: Props) => {
   };
 
   const animationDelay = 0.3;
+
   return (
     <motion.div
       ref={ref}
@@ -29,7 +29,7 @@ const SkillsDataProvider = ({ src, width, height, index }: Props) => {
       custom={index}
       transition={{ delay: index * animationDelay }}
     >
-      <Image src={src} width={width} height={height} alt="skills image" />
+      {icon}
     </motion.div>
   );
 };
