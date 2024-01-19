@@ -30,14 +30,22 @@ const HeroContent = () => {
             Front-end
           </span>
         </motion.div>
-
-        <motion.a
-          variants={slideInFromLeft(1)}
-          className="button-primary mx-auto mt-4 min-w-[100px] cursor-pointer rounded-lg py-2 text-center text-white md:max-w-[200px]"
-          href="#projects"
-        >
-          Ver Mais
-        </motion.a>
+        <div className="my-2 flex flex-row gap-4">
+          <motion.a
+            variants={slideInFromLeft(1)}
+            className="button-primary mt-4 min-w-[100px] cursor-pointer rounded-lg py-2 text-center text-white md:max-w-[200px]"
+            href="#projects"
+          >
+            Ver Mais
+          </motion.a>
+          <motion.a
+            variants={slideInFromLeft(0.7)}
+            className="button-primary mt-4 min-w-[100px] cursor-pointer rounded-lg py-2 text-center text-white md:max-w-[200px]"
+            href="#projects"
+          >
+            Baixar CV
+          </motion.a>
+        </div>
       </div>
       <motion.div
         variants={slideInFromRight(0.8)}
@@ -48,6 +56,7 @@ const HeroContent = () => {
           alt="Work icons"
           height={650}
           width={650}
+          priority
         />
       </motion.div>
     </motion.div>

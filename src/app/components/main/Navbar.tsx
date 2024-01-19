@@ -5,6 +5,8 @@ import NavLink from "../sub/NavLink";
 import { CiMenuBurger } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
 import MenuOverlay from "../sub/MenuOverlay";
+import { GoDownload } from "react-icons/go";
+import { FaEnvelope, FaTelegram } from "react-icons/fa";
 
 const Navbar = () => {
   const navLinks = [

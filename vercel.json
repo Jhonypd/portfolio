@@ -1,0 +1,19 @@
+{
+  "rewrites": [
+    {
+      "source": "/downloads/:file*",
+      "destination": "/public/:file*"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/downloads/(.*)",
+      "headers": [
+        {
+          "key": "Content-Disposition",
+          "value": "attachment"
+        }
+      ]
+    }
+  ]
+}
