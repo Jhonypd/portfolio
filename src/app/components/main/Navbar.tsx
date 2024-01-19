@@ -26,6 +26,10 @@ const Navbar = () => {
       title: "Projetos",
       path: "#projects",
     },
+    {
+      title: "Contato",
+      path: "#contact",
+    },
   ];
 
   const [navbarOpen, setNavbarOpen] = useState(false);

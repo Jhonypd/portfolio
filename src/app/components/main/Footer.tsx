@@ -5,6 +5,9 @@ import { BsEnvelopeAtFill } from "react-icons/bs";
 import { FaCode } from "react-icons/fa6";
 import { FaTelegram } from "react-icons/fa";
 
+import { MidiasData } from "../../../../constants";
+import { link } from "fs";
+
 const Footer = () => {
   return (
     <footer className="relative z-50 h-full w-full bg-transparent p-[15px] pt-6 text-gray-200 shadow-lg">
@@ -43,7 +46,7 @@ const Footer = () => {
 
           <div className="flex h-auto min-w-[200px] flex-col items-center justify-start md:items-end">
             <a
-              href="mailto:jhony-16@live.com?subject=Ofertar%20vaga%20de%20trabalho"
+              href={""}
               className="my-[15px] flex cursor-pointer flex-row items-center"
             >
               <BsEnvelopeAtFill />

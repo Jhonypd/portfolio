@@ -12,6 +12,12 @@ import TailwindIcon from "@/app/components/sub/icons/TailwindIcon";
 import TypescriptIcon from "@/app/components/sub/icons/TypescriptIcon";
 import WebpackIcon from "@/app/components/sub/icons/WebpackIcon";
 import MongodbIcon from "@/app/components/sub/icons/MongodbIcon";
+import StripeIcon from "@/app/components/sub/icons/StripeIcon";
+import GithubIcon from "@/app/components/sub/icons/GithubIcon";
+import InstagramIcon from "@/app/components/sub/icons/InstagramIcon";
+import LinkedinIcon from "@/app/components/sub/icons/LinkedinIcon";
+import TelegramIcon from "@/app/components/sub/icons/TelegramIcon";
+import EmailIcon from "@/app/components/sub/icons/EmailIcon";
 
 export const HtmlIcons = [
   HtmlIcon,
@@ -28,6 +34,35 @@ export const HtmlIcons = [
   GitIcon,
   TypescriptIcon,
   GithubBigIcon,
+  StripeIcon,
+];
+
+export const MidiasData = [
+  {
+    id: 1,
+    GithubIcon,
+    github: "https://github.com/Jhonypd",
+  },
+  {
+    id: 2,
+    LinkedinIcon,
+    linkedin: "https://www.linkedin.com/in/jhonypereiraduarte",
+  },
+  {
+    id: 3,
+    instagramHtml: InstagramIcon,
+    instagram: "https://www.instagram.com/jhonydupe/",
+  },
+  {
+    id: 4,
+    telegramHtml: TelegramIcon,
+    telegram: "https://t.me/@jhonydph",
+  },
+  {
+    id: 5,
+    EmailIcon,
+    email: "mailto:jhony-16@live.com?subject=Ofertar%20vaga%20de%20trabalho",
+  },
 ];
 
 export const projectsData = [
