@@ -34,23 +34,15 @@ const HeroContent = () => {
           <motion.a
             variants={slideInFromLeft(1)}
             className="button-primary mt-4 min-w-[100px] cursor-pointer rounded-lg py-2 text-center text-white md:max-w-[200px]"
-<<<<<<< HEAD
             href="#about-me"
-=======
-            href="#projects"
->>>>>>> 6e6b392ef122db9c652299e642a5de1b687fb60f
           >
             Ver Mais
           </motion.a>
           <motion.a
             variants={slideInFromLeft(0.7)}
             className="button-primary mt-4 min-w-[100px] cursor-pointer rounded-lg py-2 text-center text-white md:max-w-[200px]"
-<<<<<<< HEAD
             href="https://jhonyfrontend.vercel.app/downloads/jhony_pereira_duarte"
             download={"Jhony_Pereira_Duarte.pdf"}
-=======
-            href="#projects"
->>>>>>> 6e6b392ef122db9c652299e642a5de1b687fb60f
           >
             Baixar CV
           </motion.a>
