@@ -17,7 +17,7 @@ const MenuOverlay: React.FC<MenuOverlayProps> = ({ links, onCloseMenu }) => {
     onCloseMenu();
   };
   return (
-    <ul className="flex flex-col items-center py-4">
+    <ul className="flex flex-col items-center py-4 md:hidden">
       {links.map((link: Link, index: number) => (
         <li key={index}>
           <NavLink
@@ -30,9 +30,13 @@ const MenuOverlay: React.FC<MenuOverlayProps> = ({ links, onCloseMenu }) => {
       <div className="mt-2 flex w-full flex-row">
         <ul className="flex w-full flex-row items-center justify-between">
           <li className="px-3">
-            <button className="flex flex-row items-center gap-2 text-slate-200 hover:text-white">
+            <a
+              href="https://jhonyfrontend.vercel.app/downloads/jhony_pereira_duarte"
+              download={"Jhony_Pereira_Duarte.pdf"}
+              className="flex flex-row items-center gap-2 text-slate-200 hover:text-white"
+            >
               <GoDownload className="h-5 w-5" /> baixar cv
-            </button>
+            </a>
           </li>
           <li>
             <a href="https://t.me/@jhonydph" target="_blanck">
