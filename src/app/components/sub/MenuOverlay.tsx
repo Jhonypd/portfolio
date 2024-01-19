@@ -31,7 +31,7 @@ const MenuOverlay: React.FC<MenuOverlayProps> = ({ links, onCloseMenu }) => {
         <ul className="flex w-full flex-row items-center justify-between">
           <li className="px-3">
             <a
-              href="https://jhonyfrontend.vercel.app/downloads/jhony_pereira_duarte"
+              href="https://drive.google.com/file/d/1Gci45O5Lf2FnXwHwIRdd6v9aR-91M3qR/view?usp=drive_link"
               download={"Jhony_Pereira_Duarte.pdf"}
               className="flex flex-row items-center gap-2 text-slate-200 hover:text-white"
             >
