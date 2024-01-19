@@ -43,7 +43,7 @@ const ContactContent = () => {
   return (
     <div className="my-2 flex flex-col items-center">
       <form
-        className=" flex min-w-96 flex-col items-center justify-center gap-2  bg-transparent p-4 md:w-[600px]"
+        className=" flex w-full flex-col items-center justify-center gap-2  bg-transparent p-4 md:w-[600px]"
         onSubmit={sendEmail}
       >
         <input
