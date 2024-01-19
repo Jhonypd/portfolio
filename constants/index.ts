@@ -34,37 +34,41 @@ export const projectsData = [
   {
     id: 1,
     title: "JP Store",
-    description: "Project",
+    description:
+      "Uma plataforma de comércio eletrônico de última geração desenvolvida com as tecnologias mais modernas e requisitadas. Este projeto é uma adição significativa ao meu portfólio de desenvolvedor, demonstrando minha expertise na área.",
     image: "./jpstore.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Jhonypd/JP-Store/tree/main",
+    previewUrl: "https://jpstore.vercel.app/",
   },
   {
     id: 2,
     title: "CodeSnap",
-    description: "Project",
+    description:
+      "O projeto inspirado no Instagram com sistema de autenticação, desenvolvido utilizando Node.js, Express, React.js, MongoDB, e outras tecnologias. O DevGram é um projeto desenvolvido com o objetivo de replicar funcionalidades básicas do Instagram, incluindo autenticação de usuários, postagem de fotos, feed, curtidas, comentários e muito mais.",
     image: "./codesnapio.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Jhonypd/devgram/tree/frontend",
+    previewUrl: "https://codesnapio.vercel.app/login",
   },
   {
     id: 3,
     title: "SecretWord",
-    description: "Project",
+    description:
+      "Um jogo de advinhar palavras, com dicas de temas, onde pode se acumular pontos alem de que possui um contador de tentativas.",
     image: "./secretword.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Jhonypd/secretWord",
+    previewUrl: "https://secretword-2c58a.web.app/",
   },
   {
     id: 4,
     title: "Mini Blog",
-    description: "Project",
+    description:
+      "Um mini blog com dashboard, edição de posts, sistema de autenticação com firebase, alem de funcionalidades de pesquisar.",
     image: "./jhonydev.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Jhonypd/jhonyDev/tree/trafego",
+    previewUrl: "https://jhonydev-8689f.web.app/",
   },
 ];

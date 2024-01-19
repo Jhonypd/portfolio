@@ -43,6 +43,8 @@ const HeroContent = () => {
             className="button-primary mt-4 min-w-[100px] cursor-pointer rounded-lg py-2 text-center text-white md:max-w-[200px]"
             href="https://drive.google.com/file/d/1Gci45O5Lf2FnXwHwIRdd6v9aR-91M3qR/view?usp=drive_link"
             download={"Jhony_Pereira_Duarte.pdf"}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Baixar CV
           </motion.a>

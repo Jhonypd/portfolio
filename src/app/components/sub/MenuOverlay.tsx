@@ -32,6 +32,8 @@ const MenuOverlay: React.FC<MenuOverlayProps> = ({ links, onCloseMenu }) => {
           <li className="px-3">
             <a
               href="https://drive.google.com/file/d/1Gci45O5Lf2FnXwHwIRdd6v9aR-91M3qR/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
               download={"Jhony_Pereira_Duarte.pdf"}
               className="flex flex-row items-center gap-2 text-slate-200 hover:text-white"
             >
