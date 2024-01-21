@@ -21,19 +21,19 @@ import EmailIcon from "@/app/components/sub/icons/EmailIcon";
 
 export const HtmlIcons = [
   HtmlIcon,
-  ReactIcon,
-  SassIcon,
-  CssIcon,
   JavaScriptIcon,
-  ExpressIcon,
-  MongodbIcon,
+  CssIcon,
+  SassIcon,
   TailwindIcon,
+  ReactIcon,
   NextIcon,
+  ExpressIcon,
   NodejsIcon,
   WebpackIcon,
-  GitIcon,
   TypescriptIcon,
+  GitIcon,
   GithubBigIcon,
+  MongodbIcon,
   StripeIcon,
 ];
 

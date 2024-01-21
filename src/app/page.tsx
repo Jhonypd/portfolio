@@ -1,5 +1,5 @@
 import About from "./components/main/About";
-import Encryption from "./components/main/Encryption";
+import Contact from "./components/main/Contact";
 import Hero from "./components/main/Hero";
 import Projects from "./components/main/Projects";
 import Skills from "./components/main/Skills";
@@ -12,7 +12,7 @@ export default function Home() {
         <About />
         <Skills />
         <Projects />
-        <Encryption />
+        <Contact />
       </div>
     </main>
   );

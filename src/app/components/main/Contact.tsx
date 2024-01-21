@@ -2,16 +2,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { slideInFromTop } from "../../../../utils/motion";
-import Image from "next/image";
 import ContactContent from "../sub/ContactContent";
 
-const Encryption = () => {
+const Contact = () => {
   return (
     <div
       id="contact"
       className="relative flex h-full min-h-screen w-full flex-row items-center justify-center"
     >
-      <div className="absolute top-0 z-[5] h-auto w-auto">
+      <div className="absolute top-2 z-[5] h-auto w-auto">
         <motion.div
           variants={slideInFromTop}
           className="text-center text-[40px] font-medium text-gray-200"
@@ -23,12 +22,12 @@ const Encryption = () => {
           contato
         </motion.div>
       </div>
-      <div className="absolute z-20 flex h-auto w-auto translate-y-[-50px] flex-col items-center justify-center">
-        <div className="Welcome-box z-20 my-3 border border-[#7042f88b] px-[15px] py-[4px] opacity-[0.9]">
+      <div className="absolute z-20 flex h-auto w-[90%] translate-y-[-50px] flex-col items-center justify-center md:w-auto">
+        <div className="Welcome-box z-20 w-full border border-[#7042f88b] py-[4px] opacity-[0.9] md:px-[15px]">
           <ContactContent />
         </div>
       </div>
-      <div className="absolute bottom-[10px] z-20 px-[5px]">
+      <div className="absolute z-20 -translate-y-[-200px] px-[5px] md:bottom-[10px]">
         <div className="cursive text-center text-[20px] font-medium text-gray-300">
           Secure your data with end-to-end encryption
         </div>
@@ -37,4 +36,4 @@ const Encryption = () => {
   );
 };
 
-export default Encryption;
+export default Contact;

@@ -7,6 +7,7 @@ const ContactContent = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [msg, setMsg] = useState("");
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
@@ -34,6 +35,7 @@ const ContactContent = () => {
           setName("");
           setEmail("");
           setMessage("");
+          setMsg("Mensagem enviada com sucesso!");
         },
         (err) => {
           console.log("FAILURE!!", err);
@@ -41,9 +43,9 @@ const ContactContent = () => {
       );
   };
   return (
-    <div className="my-2 flex flex-col items-center">
+    <div className="my-2 flex w-full flex-col items-center py-2">
       <form
-        className=" flex w-full flex-col items-center justify-center gap-2  bg-transparent p-4 md:w-[600px]"
+        className=" flex w-full flex-col items-center justify-center gap-2  bg-transparent md:w-[600px] md:p-4"
         onSubmit={sendEmail}
       >
         <input
@@ -51,10 +53,10 @@ const ContactContent = () => {
           placeholder="Digite seu nome"
           onChange={(e) => setName(e.target.value)}
           value={name}
-          className="button-primary form-input w-[80%] rounded-2xl border-none bg-purple-500 px-2 py-1 text-white"
+          className=" form-input w-[80%] rounded-lg border-[1px] border-gray-300 bg-[#03001417] px-2 py-1 text-white backdrop-blur-md"
         />
         <input
-          className="button-primary form-input w-[80%] rounded-2xl border-none bg-purple-500 px-2 py-1 text-white"
+          className="form-input w-[80%] rounded-lg border-[1px] border-gray-300 bg-[#03001417] px-2 py-1 text-white backdrop-blur-md"
           type="text"
           placeholder="Digite seu email"
           onChange={(e) => setEmail(e.target.value)}
@@ -62,12 +64,16 @@ const ContactContent = () => {
         />
 
         <textarea
-          className="button-primary form-textarea w-[80%] rounded-2xl border-none bg-purple-500 px-2 py-1 text-white"
+          className="form-input w-[80%] rounded-lg border-[1px] border-gray-300 bg-[#03001417] px-2 py-1 text-white backdrop-blur-md"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           placeholder="Digite sua mensagem"
           rows={5}
         ></textarea>
+        <div className="flex flex-row px-3 py-2">
+          {"será exibido a mensagem de confirmação."}
+          {/* {?msg.length > 0 (<p>{msg}</p>)} */}
+        </div>
         <input
           type="submit"
           value="Enviar"
