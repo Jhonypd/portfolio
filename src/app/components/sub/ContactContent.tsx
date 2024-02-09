@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
+import { slideInFromTop } from "../../../../utils/motion";
 
 const ContactContent = () => {
   const [name, setName] = useState("");
@@ -43,7 +45,15 @@ const ContactContent = () => {
       );
   };
   return (
-    <div className="my-2 flex w-full flex-col items-center py-2">
+    <div className="my-4 flex w-full flex-col items-center py-2">
+      <div className=" z-[5] mb-5 h-auto w-auto ">
+        <motion.div
+          variants={slideInFromTop}
+          className="mb-3 text-center text-[40px] font-medium text-gray-200"
+        >
+          <p>Entre em contato</p>
+        </motion.div>
+      </div>
       <form
         className=" flex w-full flex-col items-center justify-center gap-2  bg-transparent md:w-[600px] md:p-4"
         onSubmit={sendEmail}
