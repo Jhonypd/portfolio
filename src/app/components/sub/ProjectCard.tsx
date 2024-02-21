@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaCode, FaEye } from "react-icons/fa";
@@ -7,7 +6,6 @@ interface Props {
   imageUrl: string;
   title: string;
   description: string;
-  tags: string[];
   gitUrl: string;
   previewUrl: string;
 }
@@ -18,7 +16,6 @@ const ProjectCard = ({
   description,
   previewUrl,
   gitUrl,
-  tags,
 }: Props) => {
   return (
     <div className="rounded-xl border-[1px]">

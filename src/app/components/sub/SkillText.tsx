@@ -14,7 +14,7 @@ const SkillText = () => {
     <div className="flex h-auto w-full flex-col items-center justify-center">
       <TextSections
         variant="slideInFromTop"
-        text="Penso melhor com Next js 13"
+        text="Sempre aberto a aprender novas tecnologias"
       />
       <motion.div
         variants={slideInFromLeft(0.5)}

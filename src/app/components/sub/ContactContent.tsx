@@ -4,12 +4,14 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import { slideInFromTop } from "../../../../utils/motion";
+import { useToast } from "@/components/ui/use-toast";
 
 const ContactContent = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [msg, setMsg] = useState("");
+
+  const { toast } = useToast();
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
@@ -37,7 +39,6 @@ const ContactContent = () => {
           setName("");
           setEmail("");
           setMessage("");
-          setMsg("Mensagem enviada com sucesso!");
         },
         (err) => {
           console.log("FAILURE!!", err);
@@ -80,13 +81,16 @@ const ContactContent = () => {
           placeholder="Digite sua mensagem"
           rows={5}
         ></textarea>
-        <div className="flex flex-row px-3 py-2">
-          {"será exibido a mensagem de confirmação."}
-          {/* {?msg.length > 0 (<p>{msg}</p>)} */}
-        </div>
+
         <input
           type="submit"
           value="Enviar"
+          onClick={() => {
+            toast({
+              title: "Mensagem enviada!",
+              description: `${name} sua mensagem foi enviada!`,
+            });
+          }}
           className="button-primary mt-4 min-w-[100px] cursor-pointer rounded-lg p-2 text-center text-white md:max-w-[200px]"
         />
       </form>

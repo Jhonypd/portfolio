@@ -4,12 +4,13 @@ import "./globals.css";
 import StarCanvas from "./components/main/StarBackground";
 import Navbar from "./components/main/Navbar";
 import Footer from "./components/main/Footer";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "JhonyDev",
-  description: "Desenvolvedor Front-end Brusque-SC",
+  description: "Desenvolvedor Front-end, React.js, Next.js Brusque-SC",
 };
 
 export default function RootLayout({
@@ -25,6 +26,7 @@ export default function RootLayout({
         <Navbar />
         <StarCanvas />
         {children}
+        <Toaster />
         <Footer />
       </body>
     </html>

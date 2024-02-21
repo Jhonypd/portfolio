@@ -30,7 +30,7 @@ const TextSections: React.FC<TextSectionsProps> = ({ variant, text }) => {
   return (
     <motion.div
       variants={selctedVariant}
-      className="Welcome-box border border-[#7042f88b] px-[7px] py-[8px] opacity-[0.9]"
+      className="Welcome-box w-max border border-[#7042f88b] px-4 py-[8px] opacity-[0.9]"
     >
       <SparklesIcon className="mr-[10px] h-5 w-5 text-[#b49bff]" />
       <h1 className="Welcome-text text-[13px]">{text}</h1>

@@ -1,9 +1,9 @@
 # 💼 My Personal Portfolio
 
-![Tailwindcss badge](https://img.shields.io/badge/tailwindcss-%38bdf8.svg?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Next JS badge](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![Tailwindcss badge](https://img.shields.io/badge/tailwindcss-%23007ACC.svg?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![JavaScript badge](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![TypeScript badge](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![Next JS badge](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
 ![Shadcnui](https://img.shields.io/badge/shadcnui-black?style=for-the-badge&logo=shadcnui&logoColor=white)
 
 <img width="850px" src="https://github.com/Jhonypd/assets/blob/main/portfolio-mok.png">

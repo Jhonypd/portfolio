@@ -33,17 +33,17 @@ const About = () => {
             variants={slideInFromRight(0.8)}
             className="mx-auto my-5 max-w-[600px] text-justify text-lg text-gray-400"
           >
-            Olá, sou Jhony, um profissional baseado em Brusque, Santa Catarina,
-            atualmente embarcando em uma emocionante transição de carreira.
+            Olá, sou Jhony, atualmente resido em Brusque, Santa Catarina,
+            atualmente embarcando em uma transição de carreira.
             <br />
             Estou migrando da área comercial para explorar novos horizontes no
-            mundo do desenvolvimento web. Estou entusiasmado com esta nova etapa
+            mundo do desenvolvimento web. Estou muito feliz com esta nova etapa
             e comprometido em aplicar minha experiência e habilidades para
             contribuir de forma única para o campo do desenvolvimento web.
             <br />
             Com minha paixão pela tecnologia e determinação em aprender, estou
-            pronto para enfrentar e contribuir de maneira significativa. Vamos
-            juntos construir um futuro inovador!
+            pronto para enfrentar desafios e contribuir de maneira
+            significativa.
           </motion.p>
         </div>
       </div>

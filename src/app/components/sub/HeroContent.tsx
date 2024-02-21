@@ -41,7 +41,7 @@ const HeroContent = () => {
           <motion.a
             variants={slideInFromLeft(0.7)}
             className="button-primary mt-4 min-w-[100px] cursor-pointer rounded-lg py-2 text-center text-white md:max-w-[200px]"
-            href="https://drive.google.com/file/d/1Ei18BU9tWDwMEzDm_Gh7S8gtKks3tBwS/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1c1sn5KWJNgd3C0PiVcHW5enQ1u7tX94W/view?usp=sharing"
             download={"Jhony_Pereira_Duarte.pdf"}
             target="_blank"
             rel="noopener noreferrer"
