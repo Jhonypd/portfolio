@@ -22,12 +22,14 @@ const SkillText = () => {
       >
         Tecnologias que utilizo
       </motion.div>
-      <motion.div
+      {/* <motion.div
         variants={slideInFromRight(0.5)}
         className="cursiva mb-10 mt-[10px] text-center text-[20px] text-gray-200"
       >
-        Sempre a aberto a aprender novas tecnologias e métodos
-      </motion.div>
+        Atualmente estou atuando como QA em uma empresa que desenvolve MES para
+        a indústria de automação, com bastante foco na área textil, onde
+        trabalhamos com o conceito de IoT para a industria 4.0.
+      </motion.div> */}
     </div>
   );
 };

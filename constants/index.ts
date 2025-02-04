@@ -70,7 +70,7 @@ export const projectsData = [
     id: 1,
     title: "JP Store",
     description:
-      "Uma plataforma de comércio eletrônico de última geração desenvolvida com as tecnologias mais modernas e requisitadas. Este projeto é uma adição significativa ao meu portfólio de desenvolvedor, demonstrando minha expertise na área.",
+      "Uma plataforma de comércio eletrônico desenvolvida com React.js, Next.js, Node.js, Prisma e Supabase, entre outras tecnologias. Este projeto é uma adição significativa ao meu portfólio, demonstrando minha expertise na área.",
     image: "./jpstore.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Jhonypd/JP-Store/tree/main",
@@ -78,19 +78,19 @@ export const projectsData = [
   },
   {
     id: 2,
-    title: "CodeSnap",
+    title: "Fernando Barbershop",
     description:
-      "O projeto inspirado no Instagram com sistema de autenticação, desenvolvido utilizando Node.js, Express, React.js, MongoDB, e outras tecnologias. O DevGram é um projeto desenvolvido com o objetivo de replicar funcionalidades básicas do Instagram, incluindo autenticação de usuários, postagem de fotos, feed, curtidas, comentários e muito mais.",
-    image: "./codesnapio.png",
+      "Esse projeto foi um desafio aceito, pois meu barbeiro precisava de um sistema de gerenciamento para sua barbearia. Então, ele me propôs desenvolver uma solução para ele. Ele usa há mais de 6 meses e está bem contente com a aplicação.",
+    image: "./fernando-barbershop.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/Jhonypd/devgram/tree/frontend",
-    previewUrl: "https://codesnapio.vercel.app/login",
+    gitUrl: "",
+    previewUrl: "https://fernandobarbershop.vercel.app/login",
   },
   {
     id: 3,
     title: "SecretWord",
     description:
-      "Um jogo de advinhar palavras, com dicas de temas, onde pode se acumular pontos alem de que possui um contador de tentativas.",
+      "Um jogo de adivinhação de palavras, com dicas de temas, onde é possível acumular pontos, além de possuir um contador de tentativas.",
     image: "./secretword.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Jhonypd/secretWord",
@@ -100,10 +100,11 @@ export const projectsData = [
     id: 4,
     title: "Mini Blog",
     description:
-      "Um mini blog com dashboard, edição de posts, sistema de autenticação com firebase, alem de funcionalidades de pesquisar.",
+      "Um mini blog com dashboard, edição de posts, sistema de autenticação com Firebase, além de funcionalidades de pesquisa.",
     image: "./jhonydev.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Jhonypd/jhonyDev/tree/trafego",
     previewUrl: "https://jhonydev-8689f.web.app/",
   },
 ];
+

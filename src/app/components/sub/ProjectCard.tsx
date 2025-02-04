@@ -20,8 +20,11 @@ const ProjectCard = ({
   return (
     <div className="rounded-xl border-[1px]">
       <div
-        className="group relative h-52 rounded-t-xl md:h-72"
-        style={{ background: `url(${imageUrl})`, backgroundSize: "cover" }}
+        className="group relative h-52 rounded-t-xl bg-center md:h-72"
+        style={{
+          background: `url(${imageUrl})`,
+          backgroundRepeat: "no-repeat",
+        }}
       >
         <div className="overlay absolute left-0 top-0 hidden h-full w-full  items-center justify-center gap-4 rounded-t-xl bg-[#181818] bg-opacity-0 transition-all duration-500 group-hover:flex group-hover:bg-opacity-80">
           <Link

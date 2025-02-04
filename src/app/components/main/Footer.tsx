@@ -46,11 +46,13 @@ const Footer = () => {
 
           <div className="flex h-auto min-w-[200px] flex-col items-center justify-start md:items-end">
             <a
-              href={""}
+              href={"malito:jhonyfrontend@outlook.com"}
               className="my-[15px] flex cursor-pointer flex-row items-center"
             >
               <BsEnvelopeAtFill />
-              <span className="ml-[6px] text-[15px]">jhony-16@live.com</span>
+              <span className="ml-[6px] text-[15px]">
+                jhonyfrontend@outlook.com
+              </span>
             </a>
             <p className="my-[15px] flex  flex-row items-center font-extralight">
               Desenvolvido por
