@@ -1,83 +1,113 @@
 "use client";
-import React, { useState } from "react";
-
-import { motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import TextSections from "../sub/TextSections";
 import { slideInFromLeft, slideInFromRight } from "../../../../utils/motion";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
+
+const styles = {
+  container:
+    "mt-30 z-[20] flex w-full flex-row items-center justify-center px-20 md:flex-col",
+  imageWrapper:
+    "flex h-auto w-auto max-w-[600px] flex-col gap-6 transition-all duration-300 hover:scale-105 justify-center",
+  textContainer: `
+    relative mx-auto max-w-[740px] flex flex-col
+    h-80 overflow-y-auto overflow-x-hidden
+    transition-all duration-300 ease-in-out
+    scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent
+    hover:scrollbar-thumb-gray-500
+  `,
+  text: "text-justify text-lg text-gray-400 leading-relaxed space-y-4 pr-4",
+};
 
 const About = () => {
-  const [viewPlus, setViewPlus] = useState<boolean>(false);
-
-  const handleView = () => {
-    setViewPlus(!viewPlus);
-  };
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   return (
     <motion.div
       id="about-me"
       initial="hidden"
-      animate="visible"
-      className="mt-30 z-[20] flex w-full flex-row items-center justify-center px-20 md:flex-col"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.3 }}
+      className={styles.container}
     >
       <div className="m-auto flex h-full w-full flex-col justify-center gap-5 text-start">
         <TextSections variant="slideInFromTop" text="Sobre mim" />
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col gap-8 md:flex-row md:gap-12">
           <motion.div
-            variants={slideInFromLeft(0.5)}
-            className="mt-6 flex h-auto w-auto max-w-[600px] flex-col gap-6"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.5 }}
+            className={styles.imageWrapper}
           >
-            <Image
-              src={"/jhony.jpeg"}
-              width={300}
-              height={300}
-              alt="jhony"
-              className="rounded-3xl"
-            />
+            <div className="relative">
+              {!imageLoaded && (
+                <div className="absolute inset-0 animate-pulse rounded-3xl bg-gray-200" />
+              )}
+              <Image
+                src="/jhony.jpeg"
+                width={300}
+                height={300}
+                alt="Jhony - Desenvolvedor Fullstack"
+                className={`rounded-3xl shadow-lg transition-opacity duration-300 ${
+                  imageLoaded ? "opacity-100" : "opacity-0"
+                }`}
+                onLoadingComplete={() => setImageLoaded(true)}
+                priority
+              />
+            </div>
           </motion.div>
-          <div className="relative mx-auto flex max-w-[600px] flex-col">
-            <motion.p
-              variants={slideInFromRight(0.8)}
-              className={`mx-auto my-5 ${
-                viewPlus ? "" : "h-72 pb-6"
-              }  max-w-[600px] overflow-hidden text-justify text-lg text-gray-400`}
-            >
-              E aí! Sou o Jhony, um cara de Brusque que resolveu dar um salto na
-              carreira.
-              <br />
-              Depois de anos no comercial, decidi mergulhar de cabeça no mundo
-              da tecnologia. Hoje, estou construindo minha história como
-              desenvolvedor, trazendo comigo a experiência de quem sabe muito
-              sobre comunicação, negociação e resolver problemas.
-              <br />
-              Trabalho com desenvolvimento fullstack, com foco em Node.js,
-              React, TypeScript e bancos de dados relacionais. Já coloquei de pé
-              um sistema de agendamento para barbearias que mostra como consigo
-              transformar ideias em soluções práticas.
-              <br />
-              Atualmente, atuo como QA em uma empresa que desenvolve sistemas
-              MES (Manufacturing Execution System) para a indústria de
-              automação, com foco especial no setor têxtil. Mergulhado no
-              universo da Indústria 4.0, trabalho com soluções de IoT que
-              transformam dados industriais em inteligência estratégica.
-              <br />
-              Minha migração não é só sobre aprender códigos, mas sobre usar
-              minha bagagem comercial para criar soluções que realmente fazem
-              sentido para os negócios.
-              <br />
-              Estou animado para novos desafios e sempre de olho em evoluir.
-              Bora trocar uma ideia?
-            </motion.p>
-            <Button
-              onClick={handleView}
-              className={`absolute ${
-                viewPlus ? "!-bottom-4" : "!bottom-0"
-              }  w-full bg-[#03001417] backdrop-blur-md`}
-            >
-              {viewPlus ? "Ver menos" : "ver mais"}
-            </Button>
-          </div>
+
+          <AnimatePresence mode="wait">
+            <div className={styles.textContainer} key="text-container">
+              <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: false }}
+                transition={{ duration: 0.5 }}
+                className={styles.text}
+              >
+                <p>
+                  E aí! Sou o Jhony, um cara de Brusque que resolveu dar um
+                  salto na carreira.
+                </p>
+
+                <p>
+                  Depois de anos no comercial, decidi mergulhar de cabeça no
+                  mundo da tecnologia. Hoje, estou construindo minha história
+                  como desenvolvedor, trazendo comigo a experiência de quem sabe
+                  muito sobre comunicação, negociação e resolver problemas.
+                </p>
+
+                <p>
+                  Trabalho com desenvolvimento fullstack, com foco em Node.js,
+                  React, TypeScript e bancos de dados relacionais. Já coloquei
+                  de pé um sistema de agendamento para barbearias que mostra
+                  como consigo transformar ideias em soluções práticas.
+                </p>
+
+                <p>
+                  Atualmente, atuo como QA em uma empresa que desenvolve
+                  sistemas MES (Manufacturing Execution System) para a indústria
+                  de automação, com foco especial no setor têxtil. Mergulhado no
+                  universo da Indústria 4.0, trabalho com soluções de IoT que
+                  transformam dados industriais em inteligência estratégica.
+                </p>
+
+                <p>
+                  Minha migração não é só sobre aprender códigos, mas sobre usar
+                  minha bagagem comercial para criar soluções que realmente
+                  fazem sentido para os negócios.
+                </p>
+
+                <p>
+                  Estou animado para novos desafios e sempre de olho em evoluir.
+                  Bora trocar uma ideia?
+                </p>
+              </motion.div>
+            </div>
+          </AnimatePresence>
         </div>
       </div>
     </motion.div>

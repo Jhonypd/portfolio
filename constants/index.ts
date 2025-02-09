@@ -71,7 +71,7 @@ export const projectsData = [
     title: "JP Store",
     description:
       "Uma plataforma de comércio eletrônico desenvolvida com React.js, Next.js, Node.js, Prisma e Supabase, entre outras tecnologias. Este projeto é uma adição significativa ao meu portfólio, demonstrando minha expertise na área.",
-    image: "./jpstore.png",
+    image: "/jpstore.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Jhonypd/JP-Store/tree/main",
     previewUrl: "https://jpstore.vercel.app/",
@@ -81,7 +81,7 @@ export const projectsData = [
     title: "Fernando Barbershop",
     description:
       "Esse projeto foi um desafio aceito, pois meu barbeiro precisava de um sistema de gerenciamento para sua barbearia. Então, ele me propôs desenvolver uma solução para ele. Ele usa há mais de 6 meses e está bem contente com a aplicação.",
-    image: "./fernando-barbershop.png",
+    image: "/fernando-barbershop.png",
     tag: ["All", "Web"],
     gitUrl: "",
     previewUrl: "https://fernandobarbershop.vercel.app/login",
@@ -91,7 +91,7 @@ export const projectsData = [
     title: "SecretWord",
     description:
       "Um jogo de adivinhação de palavras, com dicas de temas, onde é possível acumular pontos, além de possuir um contador de tentativas.",
-    image: "./secretword.png",
+    image: "/secretword.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Jhonypd/secretWord",
     previewUrl: "https://secretword-2c58a.web.app/",
@@ -101,7 +101,7 @@ export const projectsData = [
     title: "Mini Blog",
     description:
       "Um mini blog com dashboard, edição de posts, sistema de autenticação com Firebase, além de funcionalidades de pesquisa.",
-    image: "./jhonydev.png",
+    image: "/jhonydev.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Jhonypd/jhonyDev/tree/trafego",
     previewUrl: "https://jhonydev-8689f.web.app/",
