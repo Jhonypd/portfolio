@@ -35,7 +35,6 @@ const styles = {
     text-center text-white transition-all duration-300
     hover:opacity-90 min-w-[120px] md:min-w-[150px]
   `,
-  
 };
 
 const HeroContent = () => {
@@ -67,13 +66,12 @@ const HeroContent = () => {
           </motion.a>
 
           <motion.div variants={slideInFromLeft(0.7)} className={styles.button}>
-          <Dialog>
+            <Dialog>
               <DialogTrigger className="px-3">Ver Curriculo</DialogTrigger>
               <DialogContent className="min-w-fit ">
                 <DialogHeader>Curriculo</DialogHeader>
                 <iframe
                   src="https://drive.google.com/file/d/1QCWDPU2ZdcnUusXEuf6D84njqaDnC8HV/preview"
-
                   height="480"
                   allow="autoplay"
                   className="w-full md:w-[800px]"
