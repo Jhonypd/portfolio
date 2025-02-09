@@ -5,6 +5,12 @@ import { motion } from "framer-motion";
 import { slideInFromLeft, slideInFromRight } from "../../../../utils/motion";
 import Image from "next/image";
 import TextSections from "./TextSections";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 const HeroContent = () => {
   return (
@@ -27,7 +33,7 @@ const HeroContent = () => {
             <span className="bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent">
               Desenvolvedor Web
             </span>{" "}
-            Front-end
+            Full
           </span>
         </motion.div>
         <div className="my-2 flex flex-row gap-4">
@@ -38,7 +44,7 @@ const HeroContent = () => {
           >
             Ver Mais
           </motion.a>
-          <motion.a
+          {/* <motion.a
             variants={slideInFromLeft(0.7)}
             className="button-primary mt-4 min-w-[100px] cursor-pointer rounded-lg py-2 text-center text-white md:max-w-[200px]"
             href="https://drive.google.com/file/d/1zjNCPICqWYxGHahEaVXTJ3SXoSN9ZlZU/view?usp=sharing"
@@ -47,7 +53,26 @@ const HeroContent = () => {
             rel="noopener noreferrer"
           >
             Baixar CV
-          </motion.a>
+          </motion.a> */}
+          <motion.div
+            variants={slideInFromLeft(0.7)}
+            className="button-primary mt-4 min-w-[100px] cursor-pointer rounded-lg py-2 text-center text-white md:max-w-[200px]"
+            rel="noopener noreferrer"
+          >
+            <Dialog>
+              <DialogTrigger>Ver Curriculo</DialogTrigger>
+              <DialogContent className="min-w-fit">
+                <DialogHeader>Curriculo</DialogHeader>
+                <iframe
+                  src="https://drive.google.com/file/d/1QCWDPU2ZdcnUusXEuf6D84njqaDnC8HV/preview"
+                  // width="640"
+                  height="480"
+                  allow="autoplay"
+                  className="w-full md:w-[800px]"
+                ></iframe>
+              </DialogContent>
+            </Dialog>
+          </motion.div>
         </div>
       </div>
       <motion.div

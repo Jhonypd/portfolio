@@ -75,7 +75,7 @@ const About = () => {
                 viewPlus ? "!-bottom-4" : "!bottom-0"
               }  w-full bg-[#03001417] backdrop-blur-md`}
             >
-              Ver mais
+              {viewPlus ? "Ver menos" : "ver mais"}
             </Button>
           </div>
         </div>
