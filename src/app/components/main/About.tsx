@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const styles = {
   container:
-    "mt-30 z-[20] flex w-full flex-row items-center justify-center px-20 md:flex-col",
+    "mt-30 z-[20] flex w-full flex-row items-center justify-center px-8 md:px-20 md:flex-col",
   imageWrapper:
     "flex h-auto w-auto max-w-[600px] flex-col gap-6 transition-all duration-300 hover:scale-105 justify-center",
   textContainer: `
@@ -50,7 +50,7 @@ const About = () => {
                 width={300}
                 height={300}
                 alt="Jhony - Desenvolvedor Fullstack"
-                className={`rounded-3xl shadow-lg transition-opacity duration-300 ${
+                className={`mx-auto rounded-3xl shadow-lg transition-opacity duration-300 md:mx-0 ${
                   imageLoaded ? "opacity-100" : "opacity-0"
                 }`}
                 onLoadingComplete={() => setImageLoaded(true)}

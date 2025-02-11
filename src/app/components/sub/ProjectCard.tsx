@@ -15,7 +15,7 @@ const styles = {
   container: `
     relative rounded-xl border-[1px] bg-[#181818]/5 
     backdrop-blur-sm transition-all duration-300 
-    hover:border-purple-500/50 h-52 md:h-72
+    hover:border-purple-500/50 h-52 md:h-72 
   `,
   imageContainer: `
     relative h-full w-full rounded-xl 

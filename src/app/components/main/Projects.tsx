@@ -14,7 +14,7 @@ import {
 const styles = {
   container: `
     z-20 flex flex-col items-center justify-center 
-    py-20 w-full px-14
+    py-20 w-full md:px-14 px-7
   `,
   title: `
     bg-gradient-to-r from-purple-500 to-cyan-500 
@@ -52,7 +52,7 @@ const Projects = () => {
           {projectsData.map((project, index) => (
             <CarouselItem
               key={project.id}
-              className="md:basis-1/2 lg:basis-1/3"
+              className="basis-10/12 md:basis-1/2 lg:basis-1/3"
             >
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
@@ -76,8 +76,8 @@ const Projects = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="-left-2" />
+        <CarouselNext className="-right-10" />
       </Carousel>
     </section>
   );
