@@ -15,7 +15,7 @@ const styles = {
   container: `
     relative rounded-xl border-[1px] bg-[#181818]/5 
     backdrop-blur-sm transition-all duration-300 
-    hover:border-purple-500/50 h-52 md:h-72 
+    hover:border-purple-500/50 h-52 md:h-96 
   `,
   imageContainer: `
     relative h-full w-full rounded-xl 
@@ -71,9 +71,9 @@ const ProjectCard = ({
             src={imageUrl}
             alt={title}
             fill
-            className="object-cover"
+            className="object-contain"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            quality={90}
+            quality={100}
           />
           <div className={styles.contentOverlay}>
             <div className={styles.textContent}>

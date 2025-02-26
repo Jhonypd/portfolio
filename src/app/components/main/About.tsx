@@ -17,11 +17,10 @@ const styles = {
     scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent
     hover:scrollbar-thumb-gray-500
   `,
-  text: "text-justify text-lg text-gray-400 leading-relaxed space-y-4 pr-4",
+  text: "text-justify text-lg text-gray-400 leading-relaxed space-y-4 ",
 };
 
 const About = () => {
-  const [imageLoaded, setImageLoaded] = useState(false);
 
   return (
     <motion.div
@@ -42,18 +41,14 @@ const About = () => {
             className={styles.imageWrapper}
           >
             <div className="relative">
-              {!imageLoaded && (
-                <div className="absolute inset-0 animate-pulse rounded-3xl bg-gray-200" />
-              )}
+              
               <Image
                 src="/jhony.jpeg"
                 width={300}
                 height={300}
                 alt="Jhony - Desenvolvedor Fullstack"
-                className={`mx-auto rounded-3xl shadow-lg transition-opacity duration-300 md:mx-0 ${
-                  imageLoaded ? "opacity-100" : "opacity-0"
-                }`}
-                onLoadingComplete={() => setImageLoaded(true)}
+                className={`mx-auto rounded-3xl shadow-lg transition-opacity duration-300 md:mx-0 `}
+                
                 priority
               />
             </div>

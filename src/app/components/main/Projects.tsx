@@ -1,8 +1,8 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import ProjectCard from "../sub/ProjectCard";
 import { projectsData } from "../../../../constants";
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 import {
   Carousel,
   CarouselContent,
@@ -10,11 +10,12 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const styles = {
   container: `
     z-20 flex flex-col items-center justify-center 
-    py-20 w-full md:px-14 px-7
+    py-20 w-full md:px-10 px-7
   `,
   title: `
     bg-gradient-to-r from-purple-500 to-cyan-500 
@@ -28,13 +29,12 @@ const styles = {
     hover:scrollbar-thumb-gray-500
     snap-x snap-mandatory
   `,
-  cardWrapper: `
-    snap-center flex-shrink-0
-    w-[300px] sm:w-[350px] md:w-[400px]
-  `,
 };
 
 const Projects = () => {
+  const handlePlugin = useRef(
+    Autoplay({ delay: 3000, stopOnInteraction: false }),
+  );
   return (
     <section id="projects" className={styles.container}>
       <motion.h2
@@ -47,13 +47,16 @@ const Projects = () => {
         Meus Projetos
       </motion.h2>
 
-      <Carousel opts={{ align: "start" }} className="w-full ">
-        <CarouselContent className="-ml-1">
+      <Carousel
+        plugins={[handlePlugin.current]}
+        opts={{ align: "start" }}
+        onMouseEnter={handlePlugin.current.stop}
+        onMouseLeave={handlePlugin.current.reset}
+        className="w-full max-w-[80%] md:max-w-4xl"
+      >
+        <CarouselContent>
           {projectsData.map((project, index) => (
-            <CarouselItem
-              key={project.id}
-              className="basis-10/12 md:basis-1/2 lg:basis-1/3"
-            >
+            <CarouselItem key={project.id}>
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -63,7 +66,6 @@ const Projects = () => {
                   delay: index * 0.1,
                   ease: "easeOut",
                 }}
-                className={styles.cardWrapper}
               >
                 <ProjectCard
                   title={project.title}
@@ -76,8 +78,8 @@ const Projects = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="-left-2" />
-        <CarouselNext className="-right-10" />
+        <CarouselPrevious />
+        <CarouselNext />
       </Carousel>
     </section>
   );
