@@ -84,7 +84,7 @@ export const projectsData = [
     image: "/fernando-barbershop.png",
     tag: ["All", "Web"],
     gitUrl: "",
-    previewUrl: "https://fernandobarbershop.vercel.app/login",
+    previewUrl: "https://jhonybarbershop.vercel.app/login",
   },
   {
     id: 3,
@@ -107,4 +107,3 @@ export const projectsData = [
     previewUrl: "https://jhonydev-8689f.web.app/",
   },
 ];
-
